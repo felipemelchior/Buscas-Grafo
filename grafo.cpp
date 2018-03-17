@@ -3,6 +3,8 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <cstdlib>
+#include <string>
 using namespace std;
 
 struct node {
@@ -18,15 +20,32 @@ struct grafo {
 };
 typedef struct 	grafo Grafo;
 
-Grafo add_aresta(Grafo* g, int index){
-	return Grafo;
-}
 
 int main(int argc, char **argv) {
-	
+	ifstream iFile;
+	int nodo, aresta;
+	string Nome;
+
+
 	if(argc < 2) {
-		cout << "Faltam argumentos!" << endl << "Uso: " << argv[0] << "<ArquivoGrafo.txt>"
+		cout << "Faltam argumentos!" << endl << "Uso: " << argv[0] << "<ArquivoGrafo.txt>" << endl;
 	}
 
+	Nome = argv[1];
 
+	iFile.open(Nome.c_str());
+
+	if(!iFile.is_open()) {
+		cout << "Falha ao abrir o arquivo" << endl;
+		exit(1);
+	}
+
+	while(!iFile.eof()) {
+		iFile >> nodo;
+		iFile >> aresta;
+
+		cout << nodo << " --> " << aresta << endl;
+	}
+
+	return 0;
 }
