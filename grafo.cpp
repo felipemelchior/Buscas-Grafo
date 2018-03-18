@@ -18,7 +18,7 @@ struct grafo {
 	int m;
 	vector <Node*> vertices;
 };
-typedef struct 	grafo Grafo;
+typedef struct grafo Grafo;
 
 Grafo* criaGrafo(Grafo* Gr) {
 	if(Gr == NULL) {
@@ -30,9 +30,17 @@ Grafo* criaGrafo(Grafo* Gr) {
 	return Gr;
 }
 
+Grafo* initGrafo(Grafo* Gr, int limit) {
+	for(int i = 0; i < limit; i++) {
+		Gr->m = i++;
+		Gr->vertices
+	}
+}
+
 int main(int argc, char **argv) {
 	ifstream iFile;
 	int nodo, aresta;
+	vector <int> nodos;
 	string Nome;
 
 	Grafo* grafo = NULL;
@@ -56,16 +64,11 @@ int main(int argc, char **argv) {
 		iFile >> nodo;
 		iFile >> aresta;
 
-		grafo = criaAresta(int nodo, int aresta);
-
+		nodos.push_back(nodo);
 	}
 
-	/*while(!iFile.eof()) {
-		iFile >> nodo;
-		iFile >> aresta;
 
-		cout << nodo << " --> " << aresta << endl;
-	}*/
+
 
 	return 0;
 }
