@@ -23,24 +23,28 @@ $ ./run.sh
 Após compilar, o programa irá rodar com um arquivo de grafo padrão (Orkut) e localizará o nodo 1. <br>
 Após finalizado, pode-se usar:
 <br>
+<br>
 
 ```
 $ ./grafo <Arquivo_de_grafo> <Nodo_para_localizar>
 ```
 
+## Resolvendo erros
+Se ao tentar rodar o arquivo <b>run.sh</b> você receber este erro: 
 <br>
 
-## Resolvendo erros
-Se ao tentar rodar o arquivo <b>run.sh</b> você receber este erro: <br>
 ```
 $ bash: ./run.sh: Permission denied
 ```
+
 <br>
 Basta realizar este comando: 
 <br>
+
 ```
 $ chmod +x run.sh
 ```
+
 <br>
 
 ## Desenvolvedor
