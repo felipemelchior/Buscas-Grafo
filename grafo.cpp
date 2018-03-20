@@ -49,6 +49,7 @@ Node* addNode(Grafo *gr, int index) {
 Node* buscaNode(Grafo *gr, int index) {
 	for(int i = 0; i < gr->vertices.size(); i++) {
 		if(gr->vertices[i]->index = index) {
+			cout << gr->vertices[i]->index << endl;
 			return gr->vertices[i];
 		}
 	}
@@ -131,8 +132,6 @@ int buscaProfundidade(Grafo* gr, int ini, int fim) {
 	}
 
 	aux = buscaNode(gr, ini);
-
-	//aux = verticesAdj(gr, ini);
 
 	if(aux == NULL) return 0;
 	Pilha.push_back(aux);
