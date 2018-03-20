@@ -8,9 +8,11 @@ Dependências: <br>
 $ g++ e openMP (usado para calcular o tempo das funções)
 ```
 <br>
+
 ```
 Um arquivo de texto com a estrutura de arestas, exemplo: 1  3
 ```
+
 <br>
 
 Para compilar use: <br>
@@ -21,9 +23,11 @@ $ ./run.sh
 Após compilar, o programa irá rodar com um arquivo de grafo padrão (Orkut) e localizará o nodo 1. <br>
 Após finalizado, pode-se usar:
 <br>
+
 ```
 $ ./grafo <Arquivo_de_grafo> <Nodo_para_localizar>
 ```
+
 <br>
 
 ## Resolvendo erros
@@ -32,7 +36,8 @@ Se ao tentar rodar o arquivo <b>run.sh</b> você receber este erro: <br>
 $ bash: ./run.sh: Permission denied
 ```
 <br>
-Basta realizar este comando: <br>
+Basta realizar este comando: 
+<br>
 ```
 $ chmod +x run.sh
 ```
