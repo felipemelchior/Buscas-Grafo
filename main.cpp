@@ -20,6 +20,7 @@ int main(int argc, char *argv[]) {
 
 	Grafo* gr = new Grafo(); //Criacao do objeto da classe
 
+	cout << "Graph initialized" << endl;
 	gr->leitor(argv[1], atoi(argv[2]) ); //Passado o arquivo para o leitor
 
 	return 0;
